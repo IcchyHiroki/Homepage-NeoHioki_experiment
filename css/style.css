@@ -15,6 +15,15 @@
   box-sizing: border-box;
 }
 
+/* i18n 翻訳完了まで非表示（FOUC防止） */
+body {
+  opacity: 0;
+}
+body.lang-ready {
+  opacity: 1;
+  transition: opacity 0.12s ease;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,7 +47,7 @@ a:hover {
   color: var(--c-accent-deep);
 }
 
-/* header */
+/* ── header ─────────────────────────────────────── */
 .hdr {
   position: sticky;
   top: 0;
@@ -87,6 +96,10 @@ a:hover {
 .nav a:hover {
   color: var(--c-line);
 }
+.nav a.is-active {
+  color: var(--c-line);
+  border-bottom: 1px solid var(--c-line);
+}
 
 .lang {
   font-size: 12px;
@@ -110,7 +123,7 @@ a:hover {
   border-bottom: 1px solid var(--c-line);
 }
 
-/* hero */
+/* ── hero（トップページ専用）────────────────────── */
 .hero {
   padding: 96px var(--pad-x) 72px;
   text-align: center;
@@ -141,15 +154,36 @@ a:hover {
   font-size: 15px;
   color: var(--c-ink-sub);
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto 0;
 }
 .hero-rule {
   width: 1px;
   height: 56px;
   background: var(--c-line);
-  margin: 32px auto 0;
+  margin: 40px auto 0;
 }
 
+/* ── ページヘッダー（内部ページ共通）────────────── */
+.page-hdr {
+  padding: 56px var(--pad-x) 40px;
+  text-align: center;
+  background: linear-gradient(180deg, var(--c-bg) 0%, var(--c-bg-alt) 100%);
+  border-bottom: 1px solid var(--c-accent);
+}
+.page-hdr-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  color: var(--c-accent-deep);
+  margin: 0 0 12px;
+}
+.page-hdr-title {
+  font-size: clamp(22px, 4vw, 34px);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ── ボタン ──────────────────────────────────────── */
 .btn {
   display: inline-block;
   border: 1px solid var(--c-line);
@@ -165,7 +199,7 @@ a:hover {
   color: #fff;
 }
 
-/* section common */
+/* ── セクション共通 ──────────────────────────────── */
 .sec {
   padding: 72px var(--pad-x);
 }
@@ -210,16 +244,74 @@ a:hover {
   color: var(--c-accent-deep);
 }
 
-/* team */
+/* ── クイックナビカード（index専用）────────────── */
+.quicknav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+.quicknav-card {
+  border: 1px solid var(--c-accent);
+  padding: 20px;
+  display: block;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.quicknav-card:hover {
+  border-color: var(--c-accent-deep);
+  background: #fff;
+  color: var(--c-ink);
+}
+.quicknav-title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: var(--c-line);
+}
+.quicknav-desc {
+  margin: 0;
+  font-size: 13px;
+  color: var(--c-ink-sub);
+  line-height: 1.6;
+}
+
+/* ── チーム ──────────────────────────────────────── */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
 }
 .member {
   background: #fff;
   border: 1px solid var(--c-accent);
-  padding: 24px 20px;
+  padding: 32px 24px;
+  text-align: center;
+}
+.member-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 16px;
+  border: 2px solid var(--c-accent);
+}
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.member-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--c-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: var(--c-line);
 }
 .member-name {
   margin: 0 0 6px;
@@ -234,12 +326,126 @@ a:hover {
   letter-spacing: 0.08em;
 }
 .member-aff {
-  margin: 0;
+  margin: 0 0 12px;
   font-size: 13px;
   color: var(--c-ink-sub);
 }
+.member-bio {
+  margin: 0;
+  font-size: 14px;
+  color: var(--c-ink-sub);
+  line-height: 1.7;
+  text-align: left;
+}
 
-/* meta dl */
+/* ── 実験カード ──────────────────────────────────── */
+.exp-grid {
+  display: grid;
+  gap: 24px;
+}
+.exp-card {
+  border: 1px solid var(--c-accent);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0 24px;
+  align-items: start;
+  background: #fff;
+}
+.exp-card-date {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--c-accent-deep);
+  padding-top: 4px;
+}
+.exp-card-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+.exp-card-desc {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: var(--c-ink-sub);
+  line-height: 1.7;
+}
+.exp-card-link {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+.exp-coming {
+  margin-top: 32px;
+  font-size: 14px;
+  color: var(--c-ink-sub);
+  padding: 20px;
+  border: 1px dashed var(--c-accent-deep);
+  text-align: center;
+}
+
+/* ── セッション詳細ページ ────────────────────────── */
+.session-back {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--c-ink-sub);
+  margin-bottom: 32px;
+  border: 0;
+}
+.session-back:hover {
+  color: var(--c-line);
+}
+.flow-list {
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: flow;
+}
+.flow-list li {
+  counter-increment: flow;
+  position: relative;
+  padding: 10px 0 10px 48px;
+  border-bottom: 1px dotted var(--c-accent-deep);
+  font-size: 15px;
+}
+.flow-list li::before {
+  content: counter(flow);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 28px;
+  height: 28px;
+  background: var(--c-accent);
+  color: var(--c-line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.photos-placeholder {
+  margin-top: 16px;
+  background: var(--c-bg-alt);
+  border: 1px dashed var(--c-accent-deep);
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--c-ink-sub);
+  font-size: 14px;
+}
+
+/* ── 学術報告 ────────────────────────────────────── */
+.reports-empty {
+  margin-top: 16px;
+  padding: 48px 24px;
+  background: var(--c-bg-alt);
+  border: 1px solid var(--c-accent);
+  text-align: center;
+  font-size: 14px;
+  color: var(--c-ink-sub);
+}
+
+/* ── meta dl ─────────────────────────────────────── */
 .meta {
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -259,7 +465,7 @@ a:hover {
   font-size: 15px;
 }
 
-/* form */
+/* ── お問い合わせフォーム ────────────────────────── */
 .form-wrap {
   margin-top: 32px;
   background: #fff;
@@ -278,7 +484,7 @@ a:hover {
   margin: 12px 0 0;
 }
 
-/* faq */
+/* ── FAQ ─────────────────────────────────────────── */
 .faq details {
   border-bottom: 1px solid var(--c-accent-deep);
   padding: 16px 0;
@@ -311,7 +517,20 @@ a:hover {
   font-size: 15px;
 }
 
-/* footer */
+/* ── メール連絡 ──────────────────────────────────── */
+.mail-block {
+  margin-top: 16px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid var(--c-accent);
+}
+.mail-block p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ── footer ──────────────────────────────────────── */
 .ftr {
   border-top: 1px solid var(--c-line);
   padding: 40px var(--pad-x);
@@ -339,14 +558,18 @@ a:hover {
   letter-spacing: 0.2em;
 }
 
+/* ── レスポンシブ ────────────────────────────────── */
 @media (max-width: 600px) {
   .hdr-inner {
     gap: 12px;
   }
   .nav {
-    gap: 12px;
+    gap: 10px;
     width: 100%;
     order: 3;
+  }
+  .nav a {
+    font-size: 13px;
   }
   .meta {
     grid-template-columns: 80px 1fr;
@@ -357,5 +580,11 @@ a:hover {
   }
   .hero {
     padding: 64px var(--pad-x) 48px;
+  }
+  .exp-card {
+    grid-template-columns: 1fr;
+  }
+  .exp-card-date {
+    padding-top: 0;
   }
 }

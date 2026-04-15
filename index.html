@@ -3,174 +3,72 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Neo Hioki｜VRを用いた高齢者コミュニティ形成研究" />
-    <title>Neo Hioki ｜ VR・高齢者コミュニティ形成研究</title>
+    <meta name="description" data-i18n="neohioki_title" />
+    <title data-i18n="neohioki_title"></title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="hdr">
-      <div class="hdr-inner">
-        <a href="#top" class="brand">
-          <span data-i18n="brand_main">ネオ日置</span>
-          <span class="brand-sub" data-i18n="brand_sub">Neo Hioki Project</span>
-        </a>
-        <nav class="nav" aria-label="section">
-          <a href="#about" data-i18n="nav_about">研究概要</a>
-          <a href="#team" data-i18n="nav_team">研究チーム</a>
-          <a href="#join" data-i18n="nav_join">参加者募集</a>
-          <a href="#faq" data-i18n="nav_faq">FAQ</a>
-        </nav>
-        <div class="lang" role="group" aria-label="language">
-          <button type="button" data-lang="ja" class="is-active">JA</button>
-          <span aria-hidden="true">／</span>
-          <button type="button" data-lang="en">EN</button>
-        </div>
-      </div>
-    </header>
+  <body data-page="index">
+    <div id="site-header"></div>
 
     <main id="top">
       <section class="hero">
         <div class="hero-inner">
-          <p class="hero-eyebrow" data-i18n="hero_eyebrow">研究プロジェクト</p>
+          <p class="hero-eyebrow" data-i18n="hero_eyebrow"></p>
           <h1 class="hero-title">
-            <span data-i18n="hero_title_1">仮想空間に集う、</span>
-            <span data-i18n="hero_title_2">新しい縁。</span>
+            <span data-i18n="hero_title_1"></span>
+            <span data-i18n="hero_title_2"></span>
           </h1>
-          <p class="hero-lead" data-i18n="hero_lead">
-            VR技術を用い、高齢者の新たなコミュニティ形成と社会的孤立の緩和を探究する研究プロジェクトです。
-          </p>
-          <a class="btn" href="#join" data-i18n="hero_cta">参加者募集を見る</a>
+          <p class="hero-lead" data-i18n="hero_lead"></p>
         </div>
         <div class="hero-rule" aria-hidden="true"></div>
       </section>
 
-      <section id="about" class="sec">
+      <section class="sec">
         <div class="sec-inner">
-          <p class="sec-num">壱</p>
-          <h2 class="sec-title" data-i18n="about_title">研究概要・目的</h2>
+          <p class="sec-num">—</p>
+          <h2 class="sec-title" data-i18n="neohioki_title"></h2>
           <div class="sec-body">
-            <p data-i18n="about_p1">
-              本研究「Neo Hioki（ネオ日置）」は、鹿児島県日置市をモデルに、VR空間内で高齢者同士が交流し、地域コミュニティを再構築する可能性を検証するものです。
-            </p>
-            <p data-i18n="about_p2">
-              対面の集まりが難しい高齢者の方々にも、自宅にいながら昔ながらの町並みを歩き、隣人と語らう体験を提供します。社会的孤立の緩和、認知機能の維持、地域文化の継承という三つの観点から効果を測定します。
-            </p>
+            <p data-i18n="neohioki_p1"></p>
+            <p data-i18n="neohioki_p2"></p>
             <ul class="bullets">
-              <li data-i18n="about_li1">VR空間における高齢者の交流行動の観察</li>
-              <li data-i18n="about_li2">主観的幸福感・孤独感への影響測定</li>
-              <li data-i18n="about_li3">地域文化のデジタルアーカイブ化と継承</li>
+              <li data-i18n="neohioki_li1"></li>
+              <li data-i18n="neohioki_li2"></li>
+              <li data-i18n="neohioki_li3"></li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="team" class="sec sec-alt">
+      <section class="sec sec-alt">
         <div class="sec-inner">
-          <p class="sec-num">弐</p>
-          <h2 class="sec-title" data-i18n="team_title">研究チーム</h2>
-          <div class="team-grid">
-            <article class="member">
-              <h3 class="member-name" data-i18n="team_m1_name">日置 太郎</h3>
-              <p class="member-role" data-i18n="team_m1_role">研究代表者／VR体験設計</p>
-              <p class="member-aff" data-i18n="team_m1_aff">○○大学 情報学研究科</p>
-            </article>
-            <article class="member">
-              <h3 class="member-name" data-i18n="team_m2_name">薩摩 花子</h3>
-              <p class="member-role" data-i18n="team_m2_role">共同研究者／高齢者心理</p>
-              <p class="member-aff" data-i18n="team_m2_aff">○○大学 老年学センター</p>
-            </article>
-            <article class="member">
-              <h3 class="member-name" data-i18n="team_m3_name">桜島 次郎</h3>
-              <p class="member-role" data-i18n="team_m3_role">共同研究者／コミュニティ社会学</p>
-              <p class="member-aff" data-i18n="team_m3_aff">○○大学 社会学部</p>
-            </article>
-            <article class="member">
-              <h3 class="member-name" data-i18n="team_m4_name">伊集院 三郎</h3>
-              <p class="member-role" data-i18n="team_m4_role">技術開発／3Dモデリング</p>
-              <p class="member-aff" data-i18n="team_m4_aff">○○大学 工学部</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="join" class="sec">
-        <div class="sec-inner">
-          <p class="sec-num">参</p>
-          <h2 class="sec-title" data-i18n="join_title">参加者募集</h2>
-          <div class="sec-body">
-            <p data-i18n="join_p1">
-              本研究にご協力いただける方を募集しております。下記フォームよりお申し込みください。
-            </p>
-            <dl class="meta">
-              <dt data-i18n="join_dt1">対象</dt>
-              <dd data-i18n="join_dd1">65歳以上の方（性別・経験不問）</dd>
-              <dt data-i18n="join_dt2">期間</dt>
-              <dd data-i18n="join_dd2">全6回（隔週・各回約60分）</dd>
-              <dt data-i18n="join_dt3">場所</dt>
-              <dd data-i18n="join_dd3">日置市内 研究拠点 ／ ご自宅（機材貸出）</dd>
-              <dt data-i18n="join_dt4">謝礼</dt>
-              <dd data-i18n="join_dd4">各回終了時にお渡しします</dd>
-            </dl>
-          </div>
-          <div class="form-wrap">
-            <iframe
-              title="application form"
-              src="https://docs.google.com/forms/d/e/REPLACE_ME/viewform?embedded=true"
-              width="100%"
-              height="720"
-              loading="lazy"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              >Loading…</iframe
-            >
-            <p class="form-note" data-i18n="join_note">
-              フォームが表示されない場合は <a href="mailto:contact@example.org">contact@example.org</a> までご連絡ください。
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="sec sec-alt">
-        <div class="sec-inner">
-          <p class="sec-num">肆</p>
-          <h2 class="sec-title" data-i18n="faq_title">よくある質問</h2>
-          <div class="faq">
-            <details>
-              <summary data-i18n="faq_q1">VR機器を持っていなくても参加できますか？</summary>
-              <p data-i18n="faq_a1">はい。研究期間中は機材を無償でお貸し出しします。操作方法もスタッフが丁寧にご案内します。</p>
-            </details>
-            <details>
-              <summary data-i18n="faq_q2">VR酔いが心配です。</summary>
-              <p data-i18n="faq_a2">座って利用できる設計とし、休憩を挟みます。体調に合わせていつでも中断できます。</p>
-            </details>
-            <details>
-              <summary data-i18n="faq_q3">取得したデータはどのように扱われますか？</summary>
-              <p data-i18n="faq_a3">個人を特定できない形に匿名化したうえで、研究目的にのみ使用します。所属機関の倫理審査を経ています。</p>
-            </details>
-            <details>
-              <summary data-i18n="faq_q4">途中で参加を辞退できますか？</summary>
-              <p data-i18n="faq_a4">いつでも辞退いただけます。それによる不利益は一切ありません。</p>
-            </details>
-            <details>
-              <summary data-i18n="faq_q5">家族と一緒に参加してもよいですか？</summary>
-              <p data-i18n="faq_a5">ご家族の見守りは歓迎します。お申し込みフォーム備考欄にご記入ください。</p>
-            </details>
+          <p class="sec-num">—</p>
+          <h2 class="sec-title" data-i18n="quicknav_section"></h2>
+          <div class="quicknav-grid">
+            <a href="about.html" class="quicknav-card">
+              <p class="quicknav-title" data-i18n="quicknav_about"></p>
+              <p class="quicknav-desc" data-i18n="quicknav_about_desc"></p>
+            </a>
+            <a href="team.html" class="quicknav-card">
+              <p class="quicknav-title" data-i18n="quicknav_team"></p>
+              <p class="quicknav-desc" data-i18n="quicknav_team_desc"></p>
+            </a>
+            <a href="experiments/index.html" class="quicknav-card">
+              <p class="quicknav-title" data-i18n="quicknav_experiments"></p>
+              <p class="quicknav-desc" data-i18n="quicknav_experiments_desc"></p>
+            </a>
+            <a href="reports.html" class="quicknav-card">
+              <p class="quicknav-title" data-i18n="quicknav_reports"></p>
+              <p class="quicknav-desc" data-i18n="quicknav_reports_desc"></p>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="ftr">
-      <div class="ftr-inner">
-        <p class="ftr-brand">Neo Hioki Project</p>
-        <p class="ftr-meta" data-i18n="ftr_meta">
-          研究に関するお問い合わせ：<a href="mailto:contact@example.org">contact@example.org</a>
-        </p>
-        <p class="ftr-copy">© Neo Hioki Project</p>
-      </div>
-    </footer>
+    <div id="site-footer"></div>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
