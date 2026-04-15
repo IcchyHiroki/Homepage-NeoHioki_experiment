@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" data-i18n="team_page_title" />
+    <title data-i18n="team_page_title"></title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="team">
+    <div id="site-header"></div>
+
+    <main>
+      <div class="page-hdr">
+        <p class="page-hdr-eyebrow" data-i18n="head_context">t</p>
+        <h1 class="page-hdr-title" data-i18n="team_page_title"></h1>
+      </div>
+
+      <section class="sec">
+        <div class="sec-inner">
+          <p class="sec-num">—</p>
+          <h2 class="sec-title" data-i18n="team_title"></h2>
+          <p class="sec-body" style="margin-bottom:40px">
+            <span data-i18n="team_intro"></span>
+          </p>
+          <div class="team-grid">
+
+            <article class="member">
+              <figure class="member-photo">
+                <!--
+                  写真が用意できたら下記の img タグのコメントを外して
+                  src に画像パスを指定してください。
+                -->
+                <img src="images/team/HirokiIchikura_icon.jpg" alt="一倉　弘毅 / Hiroki Ichikura" />
+                <div class="member-photo-placeholder" aria-hidden="true">一倉</div>
+              </figure>
+              <h3 class="member-name" data-i18n="team_m1_name"></h3>
+              <p class="member-role" data-i18n="team_m1_role"></p>
+              <p class="member-aff" data-i18n="team_m1_aff"></p>
+              <p class="member-bio" data-i18n="team_m1_bio"></p>
+            </article>
+
+            <article class="member">
+              <figure class="member-photo">
+                <img src="images/team/MisatoMoriyama_icon.jpg" alt="森山　美里 / Misato Moriyama" />
+                <div class="member-photo-placeholder" aria-hidden="true">森山</div>
+              </figure>
+              <h3 class="member-name" data-i18n="team_m2_name"></h3>
+              <p class="member-role" data-i18n="team_m2_role"></p>
+              <p class="member-aff" data-i18n="team_m2_aff"></p>
+              <p class="member-bio" data-i18n="team_m2_bio"></p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
