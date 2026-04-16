@@ -12,7 +12,7 @@
 
     <main>
       <div class="page-hdr">
-        <p class="page-hdr-eyebrow" data-i18n="head_context">t</p>
+        <p class="page-hdr-eyebrow" data-i18n="head_context"></p>
         <h1 class="page-hdr-title" data-i18n="team_page_title"></h1>
       </div>
 
@@ -20,19 +20,12 @@
         <div class="sec-inner">
           <p class="sec-num">—</p>
           <h2 class="sec-title" data-i18n="team_title"></h2>
-          <p class="sec-body" style="margin-bottom:40px">
-            <span data-i18n="team_intro"></span>
-          </p>
-          <div class="team-grid">
+          <p class="sec-intro" data-i18n="team_intro"></p>
 
+          <div class="team-grid">
             <article class="member">
               <figure class="member-photo">
-                <!--
-                  写真が用意できたら下記の img タグのコメントを外して
-                  src に画像パスを指定してください。
-                -->
                 <img src="images/team/HirokiIchikura_icon.jpg" alt="一倉　弘毅 / Hiroki Ichikura" />
-                <div class="member-photo-placeholder" aria-hidden="true">一倉</div>
               </figure>
               <h3 class="member-name" data-i18n="team_m1_name"></h3>
               <p class="member-role" data-i18n="team_m1_role"></p>
@@ -43,7 +36,6 @@
             <article class="member">
               <figure class="member-photo">
                 <img src="images/team/MisatoMoriyama_icon.jpg" alt="森山　美里 / Misato Moriyama" />
-                <div class="member-photo-placeholder" aria-hidden="true">森山</div>
               </figure>
               <h3 class="member-name" data-i18n="team_m2_name"></h3>
               <p class="member-role" data-i18n="team_m2_role"></p>
@@ -51,6 +43,15 @@
               <p class="member-bio" data-i18n="team_m2_bio"></p>
             </article>
 
+            <article class="member">
+              <figure class="member-photo">
+                <img src="images/team/KenroShigemizu_icon.jpg" alt="重水　憲朗 / Kenro Shigemizu" />
+              </figure>
+              <h3 class="member-name" data-i18n="team_m3_name"></h3>
+              <p class="member-role" data-i18n="team_m3_role"></p>
+              <p class="member-aff" data-i18n="team_m3_aff"></p>
+              <p class="member-bio" data-i18n="team_m3_bio"></p>
+            </article>
           </div>
         </div>
       </section>
@@ -60,6 +61,6 @@
 
     <script src="js/i18n.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 </html>

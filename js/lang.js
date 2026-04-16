@@ -15,10 +15,8 @@
       if (dict[key] == null) continue;
       var tag = el.tagName.toLowerCase();
       if (tag === "title") {
-        // <title data-i18n="..."> → document.title を更新
         document.title = dict[key];
       } else if (tag === "meta") {
-        // <meta data-i18n="..."> → content 属性を更新
         el.setAttribute("content", dict[key]);
       } else {
         el.innerHTML = dict[key];
@@ -56,14 +54,9 @@
     // 翻訳完了後に表示（FOUC防止）
     document.body.classList.add("lang-ready");
 
-    // イベント委譲で言語ボタンを処理（nav.js注入後でも動作する）
+    // nav.js が挿入するボタンにも効くよう、document 全体へイベント委譲
     document.addEventListener("click", function (ev) {
-      var btn = ev.target.closest
-        ? ev.target.closest("[data-lang]")
-        : null;
-      if (!btn && ev.target.getAttribute) {
-        btn = ev.target.getAttribute("data-lang") ? ev.target : null;
-      }
+      var btn = ev.target.closest("[data-lang]");
       if (btn) applyLang(btn.getAttribute("data-lang"));
     });
   }

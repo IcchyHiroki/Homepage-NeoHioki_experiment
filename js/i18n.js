@@ -22,23 +22,28 @@
       // フッター
       ftr_brand: "日置市地域おこし協力隊",
       ftr_meta:
-        '研究に関するお問い合わせ：<a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a>',
+        '研究に関するお問い合わせ：<a href="mailto:icchyWorks[@]gmail.com">icchyWorks[@]gmail.com</a>',
 
       // ── index（ネオ日置とは？）──────────────────────────
       hero_eyebrow: "研究プロジェクト",
-      hero_title_1: "仮想空間に集う、",
-      hero_title_2: "新しい縁。",
+      hero_title_1: "仮想空間での集い、交流から見える",
+      hero_title_2: "鹿児島県日置市の姿。",
       hero_lead:
         "VR・メタバースプラットフォームでの体験を通じて、地域コミュニティの形成が可能かどうかを長期的に検証する研究プロジェクトです。",
 
       neohioki_title: "ネオ日置とは？",
       neohioki_p1:
-        "「ネオ日置（NEO HIOKI）」は、鹿児島県日置市をモデルフィールドに、VR・メタバースプラットフォームを活用した地域コミュニティ形成の可能性を長期的に検証する実験的研究プロジェクトです。",
+        "「ネオ日置（NEO HIOKI）」は、鹿児島県日置市が運営する公式メタバースプロジェクトです。VR・メタバースプラットフォーム上に日置市の景観や文化を再現し、住民をはじめ日置を想うすべての人が集う、もう一つの日置市として運営されています。",
       neohioki_p2:
-        "少子高齢化や人口流出が進む地方都市では、地域のつながりが希薄になるリスクが高まっています。本プロジェクトは、VR・メタバース空間での交流体験を通じて、世代を超えた地域コミュニティの再形成が可能かどうかを実証的に検討します。",
+        "本研究「ネオ日置を用いたコミュニティ形成に関する調査」は、このネオ日置を基盤に、VR・メタバース空間での交流を通じて世代を超えた地域コミュニティの再形成が可能かどうかを、長期的な視点で検証します。少子高齢化や人口流出が進む地方において、デジタル技術による地域コミュニティ形成の効果を多角的に測定します。",
       neohioki_li1: "日置市の景観をVR・メタバース空間に再現",
       neohioki_li2: "世代を超えた住民同士がアバターで交流",
       neohioki_li3: "地域コミュニティ形成への長期的な効果を科学的に検証",
+
+      neohioki_site_title: "ネオ日置 特設サイト",
+      neohioki_site_desc:
+        "本研究の基盤となっているメタバースプロジェクト「ネオ日置」の公式特設サイトです。鹿児島県日置市が運営しています。",
+      neohioki_site_cta: "特設サイトへ →",
 
       quicknav_section: "コンテンツ一覧",
       quicknav_about: "研究概要",
@@ -54,7 +59,7 @@
       about_page_title: "研究概要",
       about_title: "研究概要・目的",
       about_p1:
-        "本研究「NEO HIOKI（ネオ日置）を用いた地域コミュニティ形成に関する調査」は、鹿児島県日置市をモデルに、VR・メタバースプラットフォーム上での体験を通じて地域コミュニティの形成が可能かどうかを、長期的な視点で検証するものです。",
+        '本研究「NEO HIOKI（ネオ日置）を用いた地域コミュニティ形成に関する調査」は、鹿児島県日置市をモデルに、VR・メタバースプラットフォーム上での体験を通じて地域コミュニティの形成が可能かどうかを、長期的な視点で検証するものです。研究の基盤となるメタバース空間は、日置市が運営する公式プロジェクト<a href="https://neohioki.hiokito.jp/" target="_blank" rel="noopener">ネオ日置</a>を活用しています。',
       about_p2:
         "対面での交流機会が限られる地域住民が、VR・メタバース空間を通じて交流し、地域の絆を育む新たな形を探ります。少子高齢化や人口減少の影響を受ける地方において、デジタル技術による地域コミュニティ形成の効果を多角的に測定します。",
       about_li1: "VR・メタバース空間における地域コミュニティ形成プロセスの観察",
@@ -90,6 +95,11 @@
       team_m2_aff: "日置市地域おこし協力隊",
       team_m2_bio:
         "地域の人々とのつながりを大切にしながら、コミュニティデザインを担当。",
+      team_m3_name: "重水　憲朗",
+      team_m3_role: "ネオ日置 推進/ 地域づくり",
+      team_m3_aff: "日置市役所 地域づくり課",
+      team_m3_bio:
+        "ネオ日置などの地域づくり活動に長年取り組む。",
 
       // ── experiments（実施実験一覧）─────────────────────
       exp_page_title: "実施実験",
@@ -146,7 +156,7 @@
       contact_dt4: "謝礼",
       contact_dd4: "各回終了時にお渡しします",
       contact_form_note:
-        'フォームが表示されない場合は <a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a> までご連絡ください。',
+        'フォームが表示されない場合は <a href="mailto:icchyWorks[@]gmail.com">icchyWorks[@]gmail.com</a> までご連絡ください。',
 
       contact_faq_title: "よくある質問",
       faq_q1: "VR機器を持っていなくても参加できますか？",
@@ -166,7 +176,7 @@
 
       contact_mail_title: "メールでのお問い合わせ",
       contact_mail_p:
-        '研究内容・参加についての詳細なご質問は、メールにてお気軽にどうぞ。<br><a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a>',
+        '研究内容・参加についての詳細なご質問は、メールにてお気軽にどうぞ。<br><a href="mailto:icchyWorks[@]gmail.com">icchyWorks[@]gmail.com</a>',
     },
 
     en: {
@@ -188,7 +198,7 @@
       // footer
       ftr_brand: "Community-Reactivating Cooperator, Hioki City",
       ftr_meta:
-        'Inquiries: <a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a>',
+        'Inquiries: <a href="mailto:icchyWorks[@]gmail.com">icchyWorks[@]gmail.com</a>',
 
       // ── index ──────────────────────────────────────────
       hero_eyebrow: "RESEARCH PROJECT",
@@ -199,12 +209,17 @@
 
       neohioki_title: 'What is "NEO HIOKI"?',
       neohioki_p1:
-        '"NEO HIOKI" is an experimental research project using VR and metaverse platforms to investigate the long-term potential for local community formation, with Hioki City, Kagoshima as its model field.',
+        '"NEO HIOKI" is the official metaverse project operated by Hioki City, Kagoshima. It recreates the city\'s landscape and culture on VR and metaverse platforms, serving as an alternate Hioki — a gathering place for residents and everyone who feels connected to the city.',
       neohioki_p2:
-        "In regional cities facing depopulation and demographic change, the bonds of local community are increasingly at risk. This project explores whether cross-generational community ties can be rebuilt through interaction in VR and metaverse spaces.",
+        'Building on this foundation, the research project "A Study on Community Formation via NEO HIOKI" investigates, from a long-term perspective, whether cross-generational community ties can be rebuilt through interaction in VR and metaverse spaces. We measure the effects of digital technology on community formation from multiple angles, in a region affected by depopulation.',
       neohioki_li1: "Recreating Hioki City's landscape in VR / metaverse space",
       neohioki_li2: "Cross-generational residents interacting via avatars",
       neohioki_li3: "Scientifically measuring long-term effects on local community formation",
+
+      neohioki_site_title: "NEO HIOKI Official Site",
+      neohioki_site_desc:
+        'The official site of the "NEO HIOKI" metaverse project — the foundation of this research — operated by Hioki City, Kagoshima.',
+      neohioki_site_cta: "Visit official site →",
 
       quicknav_section: "Contents",
       quicknav_about: "Research",
@@ -220,7 +235,7 @@
       about_page_title: "Research",
       about_title: "Research Overview",
       about_p1:
-        'The "NEO HIOKI" project takes Hioki City, Kagoshima as its model and examines, from a long-term perspective, whether local community formation is possible through experiences on VR and metaverse platforms.',
+        'This research takes Hioki City, Kagoshima as its model and examines, from a long-term perspective, whether local community formation is possible through experiences on VR and metaverse platforms. The underlying metaverse space is the official <a href="https://neohioki.hiokito.jp/" target="_blank" rel="noopener">NEO HIOKI</a> project operated by Hioki City.',
       about_p2:
         "This project explores new ways for local residents with limited opportunities for in-person interaction to connect and build community bonds through VR and metaverse spaces. We measure the effects of digital technology on local community formation from multiple angles, in a region affected by population decline.",
       about_li1: "Observing the community formation process in VR / metaverse space",
@@ -233,9 +248,9 @@
 
       about_schedule_title: "Schedule",
       about_sch_dt1: "Period",
-      about_sch_dd1: "April 2026 – September 2026 (6 sessions total)",
+      about_sch_dd1: "April 2026 – March 2027 (experiments held on irregular dates)",
       about_sch_dt2: "Frequency",
-      about_sch_dd2: "Biweekly, approx. 60 min each",
+      about_sch_dd2: "Irregular, approx. 60–90 min per session",
       about_sch_dt3: "Location",
       about_sch_dd3: "Hinichi nova, Hioki City Tourist Information Office, etc.",
       about_sch_dt4: "Eligibility",
@@ -256,6 +271,11 @@
       team_m2_aff: "Community-Reactivating Cooperator, Hioki City",
       team_m2_bio:
         "Leads community design with a focus on nurturing connections among local residents.",
+      team_m3_name: "Kenro Shigemizu",
+      team_m3_role: 'Promoting "NEO HIOKI" / Regional Development',
+      team_m3_aff: "Regional Development Division, Hioki City Hall",
+      team_m3_bio:
+        'Engaged in regional development activities in Hioki City, including "NEO HIOKI", for many years.',
 
       // ── experiments ────────────────────────────────────
       exp_page_title: "Experiments",
@@ -315,7 +335,7 @@
       contact_dt4: "Honorarium",
       contact_dd4: "Provided at the end of each session",
       contact_form_note:
-        'If the form does not appear, please contact <a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a>.',
+        'If the form does not appear, please contact <a href="mailto:icchyWorks[@]gmail.com">icchyWorks[@]gmail.com</a>.',
 
       contact_faq_title: "FAQ",
       faq_q1: "Can I participate without my own VR equipment?",
@@ -335,7 +355,7 @@
 
       contact_mail_title: "Email Inquiries",
       contact_mail_p:
-        'For detailed questions about the research or participation, please feel free to reach us by email.<br><a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a>',
+        'For detailed questions about the research or participation, please feel free to reach us by email.<br><a href="mailto:icchyWorks[@]gmail.com">icchyWorks[@]gmail.com</a>',
     },
   };
 })();
