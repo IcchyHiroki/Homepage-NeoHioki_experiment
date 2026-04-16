@@ -3,7 +3,7 @@
 
   window.NeoHioki = window.NeoHioki || {};
   window.NeoHioki.DICT = {
-    ja: {
+    jp: {
       // ブランド
       brand_main: "ネオ日置を用いたコミュニティ形成に関する調査",
       brand_sub: 'The Survey about building community within "NEO HIOKI" Project',

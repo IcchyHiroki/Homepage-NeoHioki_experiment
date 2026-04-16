@@ -4,7 +4,7 @@
   function applyLang(lang) {
     var dict =
       (window.NeoHioki && window.NeoHioki.DICT[lang]) ||
-      (window.NeoHioki && window.NeoHioki.DICT.ja) ||
+      (window.NeoHioki && window.NeoHioki.DICT.jp) ||
       {};
     document.documentElement.lang = lang;
 
@@ -49,8 +49,8 @@
     }
     var initial =
       saved ||
-      ((navigator.language || "ja").toLowerCase().indexOf("ja") === 0
-        ? "ja"
+      ((navigator.language || "jp").toLowerCase().indexOf("jp") === 0
+        ? "jp"
         : "en");
     applyLang(initial);
     // 翻訳完了後に表示（FOUC防止）

@@ -49,13 +49,13 @@
         buildNavLinks(base, currentPage) +
         "</nav>" +
         '<div class="lang" role="group" aria-label="language">' +
-        '<button type="button" data-lang="ja" class="is-active">JA</button>' +
+        '<button type="button" data-lang="jp" class="is-active">JP</button>' +
         '<span aria-hidden="true">／</span>' +
         '<button type="button" data-lang="en">EN</button>' +
         "</div>" +
         "</div>" +
         "</header>";
-      headerEl.insertAdjacentHTML("beforebegin", headerHTML);
+      headerEl.insertAdjpcentHTML("beforebegin", headerHTML);
       headerEl.remove();
     }
 
@@ -68,7 +68,7 @@
         '<p class="ftr-meta" data-i18n="ftr_meta">研究に関するお問い合わせ：<a href="mailto:icchyworks[@]gmail.com">icchyworks[@]gmail.com</a></p>' +
         "</div>" +
         "</footer>";
-      footerEl.insertAdjacentHTML("beforebegin", footerHTML);
+      footerEl.insertAdjpcentHTML("beforebegin", footerHTML);
       footerEl.remove();
     }
   }
